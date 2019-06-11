@@ -17,7 +17,7 @@ struct queue
 typedef struct q_node QNode;
 typedef struct queue Queue;
 
-QNode* newNode(int k);
+QNode* newQueueNode(int k);
 Queue* createQueue();
 void enQueue(Queue* q,int k);
 QNode* deQueue(Queue* q);

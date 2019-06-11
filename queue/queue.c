@@ -2,7 +2,7 @@
 #include "queue.h"
   
 // A utility function to create a new linked list node. 
-QNode* newNode(int k) 
+QNode* newQueueNode(int k) 
 { 
     QNode *temp = (QNode*)malloc(sizeof(QNode)); 
     temp->key = k; 
@@ -22,7 +22,7 @@ Queue *createQueue()
 void enQueue(Queue *q, int k) 
 { 
     // Create a new LL node 
-    QNode *temp = newNode(k); 
+    QNode *temp = newQueueNode(k); 
   
     // If queue is empty, then new node is front and rear both 
     if (q->rear == NULL) 
